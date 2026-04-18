@@ -9,7 +9,7 @@ import { toolGroups, trustPoints, stats } from '../data/tools'; // Fallback
 export default function HomePage() {
   const [homeContent, setHomeContent] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
 
   usePageSeo({
     title: 'All-in-One PDF Tools',

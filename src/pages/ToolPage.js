@@ -14,7 +14,7 @@ export default function ToolPage() {
   const { toolSlug } = useParams();
   const [tool, setTool] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
 
   const navigate = useNavigate();
 

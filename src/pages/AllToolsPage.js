@@ -8,7 +8,7 @@ import { allTools } from '../data/tools'; // Fallback
 export default function AllToolsPage() {
   const [tools, setTools] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
 
   usePageSeo({
     title: 'All PDF Tools',
