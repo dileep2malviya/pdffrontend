@@ -1,0 +1,47 @@
+import { Box, Container, Grid, Link, Stack, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+
+const quickLinks = [
+  { label: 'Merge PDF', to: '/tools/merge-pdf' },
+  // { label: 'Compress PDF', to: '/tools/compress-pdf' },
+  { label: 'PDF to JPG', to: '/tools/pdf-to-jpg' },
+  { label: 'Protect PDF', to: '/tools/protect-pdf' }
+];
+
+export default function SiteFooter() {
+  return (
+    <Box component="footer" sx={{ mt: 10, py: 6, borderTop: '1px solid rgba(16, 42, 42, 0.1)' }}>
+      <Container maxWidth="xl">
+        <Grid container spacing={4}>
+          <Grid size={{ xs: 12, md: 5 }}>
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              PDF Orbit
+            </Typography>
+            <Typography sx={{ mt: 1.2, color: 'text.secondary', maxWidth: 420 }}>
+              A modern document workspace for converting, editing, organizing, and securing PDF files with speed and clarity.
+            </Typography>
+          </Grid>
+          <Grid size={{ xs: 12, md: 3 }}>
+            <Typography sx={{ fontWeight: 700, mb: 1.5 }}>Quick Tools</Typography>
+            <Stack spacing={1.1}>
+              {quickLinks.map((item) => (
+                <Link key={item.to} component={RouterLink} to={item.to} underline="hover" color="inherit">
+                  {item.label}
+                </Link>
+              ))}
+            </Stack>
+          </Grid>
+          <Grid size={{ xs: 12, md: 4 }}>
+            <Typography sx={{ fontWeight: 700, mb: 1.5 }}>SEO + Ads Ready</Typography>
+            <Typography sx={{ color: 'text.secondary' }}>
+              Structured metadata is included and the layout has reserved ad-ready blocks to integrate Google AdSense later without redesign.
+            </Typography>
+          </Grid>
+        </Grid>
+        <Typography sx={{ mt: 5, color: 'text.secondary' }}>
+          Copyright {new Date().getFullYear()} PDF Orbit. All rights reserved.
+        </Typography>
+      </Container>
+    </Box>
+  );
+}
