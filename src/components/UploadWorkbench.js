@@ -190,7 +190,7 @@ export default function UploadWorkbench({ title, toolSlug }) {
     context.lineWidth = 2.4;
     context.lineCap = 'round';
     context.lineJoin = 'round';
-  }, [toolSlug]);
+  }, [toolSlug, signOptions.textColor]);
 
   const updateSelectedFiles = (filesList) => {
     const files = Array.from(filesList || []);
