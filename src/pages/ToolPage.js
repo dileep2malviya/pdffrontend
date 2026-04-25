@@ -17,10 +17,15 @@ export default function ToolPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch (e) {
-      // ad blocked or not loaded
+    if (tool) {
+      const timer = setTimeout(() => {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+          // ad blocked or not loaded
+        }
+      }, 500);
+      return () => clearTimeout(timer);
     }
   }, [tool]);
 
