@@ -4,16 +4,24 @@ import ToolCard from '../components/ToolCard';
 import usePageSeo from '../hooks/usePageSeo';
 import { fetchTools } from '../services/api';
 import { allTools } from '../data/tools'; // Fallback
+import { generateBreadcrumbSchema } from '../utils/seoUtils';
 
 export default function AllToolsPage() {
   const [tools, setTools] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error] = useState(null);
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { label: 'Home', path: '/' },
+    { label: 'All Tools', path: '/all-tools' }
+  ]);
+
   usePageSeo({
     title: 'All PDF Tools',
-    description: 'Browse all PDF conversion, editing, optimization, and security tools in one place.',
-    canonicalPath: '/all-tools'
+    description: 'Browse all 15+ PDF conversion, editing, optimization, and security tools. Convert, merge, split, compress, edit and protect PDFs online for free.',
+    canonicalPath: '/all-tools',
+    keywords: 'pdf tools, convert, merge, split, compress, edit, protect, rotate, watermark, unlock, pdf converter, free pdf tools',
+    schema: breadcrumbSchema
   });
 
   useEffect(() => {

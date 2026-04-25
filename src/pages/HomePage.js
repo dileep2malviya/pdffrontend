@@ -11,11 +11,28 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const [error] = useState(null);
 
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ImageToPDFNow',
+    url: 'https://www.imagetopdfnow.com',
+    logo: 'https://www.imagetopdfnow.com/logo512.png',
+    description: 'Free online PDF tools for conversion, editing, and document management',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Support',
+      url: 'https://www.imagetopdfnow.com/contact'
+    },
+    sameAs: []
+  };
+
   usePageSeo({
-    title: 'All-in-One PDF Tools',
-    description:
-      'Convert, merge, split, compress, edit, and protect PDFs with a high-performance modern interface.',
-    canonicalPath: '/'
+    title: 'Free Online PDF Tools',
+    description: 'Convert images to PDF, merge, split, compress, edit and protect PDFs online. Fast, free, and no sign-up required. Over 15 PDF tools in one modern workspace.',
+    canonicalPath: '/',
+    keywords: 'pdf tools, convert pdf, merge pdf, split pdf, compress pdf, edit pdf, pdf editor, online pdf converter, free pdf tools, ilovepdf alternative',
+    schema: organizationSchema,
+    ogImage: 'https://www.imagetopdfnow.com/logo512.png'
   });
 
   useEffect(() => {

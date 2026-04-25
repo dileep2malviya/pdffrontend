@@ -6,6 +6,7 @@ import usePageSeo from '../hooks/usePageSeo';
 import { fetchToolBySlug } from '../services/api';
 import { allTools } from '../data/tools'; // Fallback
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
+import { generateToolSchema, generateBreadcrumbSchema } from '../utils/seoUtils';
 
 
 export default function ToolPage() {
@@ -15,6 +16,16 @@ export default function ToolPage() {
   const [error] = useState(null);
 
   const navigate = useNavigate();
+
+  // Generate tool schema when tool data is loaded
+  const toolSchema = tool ? generateToolSchema(tool) : null;
+  
+  // Generate breadcrumb schema
+  const breadcrumbSchema = tool ? generateBreadcrumbSchema([
+    { label: 'Home', path: '/' },
+    { label: 'Tools', path: '/all-tools' },
+    { label: tool.name, path: `/tools/${tool.slug}` }
+  ]) : null;
 
   useEffect(() => {
     if (tool) {
@@ -32,9 +43,11 @@ export default function ToolPage() {
   usePageSeo({
     title: tool ? tool.name : 'Tool Not Found',
     description: tool
-      ? `${tool.name} online with a modern and optimized workflow. ${tool.description}`
+      ? `${tool.name}: ${tool.description}`
       : 'The requested PDF tool is not available.',
-    canonicalPath: tool ? `/tools/${tool.slug}` : '/all-tools'
+    canonicalPath: tool ? `/tools/${tool.slug}` : '/all-tools',
+    keywords: tool ? `${tool.name.toLowerCase()}, pdf, ${tool.group.toLowerCase()}` : '',
+    schema: breadcrumbSchema
   });
 
   useEffect(() => {
