@@ -8,6 +8,13 @@ const quickLinks = [
   { label: 'Protect PDF', to: '/tools/protect-pdf' }
 ];
 
+const companyLinks = [
+  { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
+  { label: 'Privacy Policy', to: '/privacy-policy' },
+  { label: 'Terms', to: '/terms' }
+];
+
 export default function SiteFooter() {
   return (
     <Box component="footer" sx={{ mt: 10, py: 6, borderTop: '1px solid rgba(16, 42, 42, 0.1)' }}>
@@ -32,10 +39,14 @@ export default function SiteFooter() {
             </Stack>
           </Grid>
           <Grid size={{ xs: 12, md: 4 }}>
-            <Typography sx={{ fontWeight: 700, mb: 1.5 }}>SEO + Ads Ready</Typography>
-            <Typography sx={{ color: 'text.secondary' }}>
-              Structured metadata is included and the layout has reserved ad-ready blocks to integrate Google AdSense later without redesign.
-            </Typography>
+            <Typography sx={{ fontWeight: 700, mb: 1.5 }}>Company</Typography>
+            <Stack spacing={1.1}>
+              {companyLinks.map((item) => (
+                <Link key={item.to} component={RouterLink} to={item.to} underline="hover" color="inherit">
+                  {item.label}
+                </Link>
+              ))}
+            </Stack>
           </Grid>
         </Grid>
         <Typography sx={{ mt: 5, color: 'text.secondary' }}>

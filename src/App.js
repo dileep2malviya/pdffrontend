@@ -46,6 +46,26 @@ function App() {
           }
         />
         <Route
+          path="/privacy-policy"
+          element={
+            <StaticPage
+              title="Privacy Policy"
+              description="We explain what data we collect, how we use cookies and analytics, and how ad services like Google AdSense may process information when you use ImageToPDFNow."
+              canonicalPath="/privacy-policy"
+            />
+          }
+        />
+        <Route
+          path="/terms"
+          element={
+            <StaticPage
+              title="Terms and Conditions"
+              description="By using ImageToPDFNow, you agree to use our tools only with content you own or are authorized to process. We do not allow copyright infringement or unlawful use."
+              canonicalPath="/terms"
+            />
+          }
+        />
+        <Route
           path="/login"
           element={
             <StaticPage
