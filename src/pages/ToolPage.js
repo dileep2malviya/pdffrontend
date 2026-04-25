@@ -1,6 +1,4 @@
-import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
-import CheckCircleOutlineRoundedIcon from '@mui/icons-material/CheckCircleOutlineRounded';
-import { Box, Button, Chip, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Button, Chip, Container, Grid, Typography } from '@mui/material';
 import { Link as RouterLink, useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import UploadWorkbench from '../components/UploadWorkbench';
