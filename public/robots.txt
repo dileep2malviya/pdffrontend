@@ -9,7 +9,6 @@ Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://www.imagetopdfnow.com/sitemap.xml
-Sitemap: https://www.imagetopdfnow.com/sitemap-tools.xml
 
 # Specific rules for Google
 User-agent: Googlebot
