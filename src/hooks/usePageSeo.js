@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { injectSchemaTag, removeSchemaTag, getMetaDescription } from '../utils/seoUtils';
+import { injectSchemaTag, removeSchemaTag, getMetaDescription } from '../Utils/seoUtils';
 
 const upsertMeta = (name, content, attribute = 'name') => {
   let element = document.head.querySelector(`meta[${attribute}="${name}"]`);

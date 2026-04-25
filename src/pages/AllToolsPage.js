@@ -4,7 +4,7 @@ import ToolCard from '../components/ToolCard';
 import usePageSeo from '../hooks/usePageSeo';
 import { fetchTools } from '../services/api';
 import { allTools } from '../data/tools'; // Fallback
-import { generateBreadcrumbSchema } from '../utils/seoUtils';
+import { generateBreadcrumbSchema } from '../Utils/seoUtils';
 
 export default function AllToolsPage() {
   const [tools, setTools] = useState([]);

@@ -6,7 +6,7 @@ import usePageSeo from '../hooks/usePageSeo';
 import { fetchToolBySlug } from '../services/api';
 import { allTools } from '../data/tools'; // Fallback
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
-import { generateToolSchema, generateBreadcrumbSchema } from '../utils/seoUtils';
+import { generateToolSchema, generateBreadcrumbSchema } from '../Utils/seoUtils';
 
 
 export default function ToolPage() {
