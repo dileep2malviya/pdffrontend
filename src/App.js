@@ -29,8 +29,8 @@ function App() {
           path="/about"
           element={
             <StaticPage
-              title="About PDF Orbit"
-              description="PDF Orbit is designed for high-quality document workflows with reusable architecture and a modern user experience."
+              title="About ImageToPDFNow"
+              description="ImageToPDFNow is designed for high-quality document workflows with reusable architecture and a modern user experience."
               canonicalPath="/about"
             />
           }

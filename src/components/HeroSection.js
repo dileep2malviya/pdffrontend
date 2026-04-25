@@ -34,7 +34,7 @@ export default function HeroSection({ stats }) {
               Build, convert, and organize PDFs in one beautiful workspace.
             </Typography>
             <Typography sx={{ mt: 2.5, color: 'text.secondary', fontSize: '1.1rem', maxWidth: 680 }}>
-              PDF Orbit brings every document tool together with a modern flow, reusable modules, and scalable architecture ready for growth.
+              ImageToPDFNow brings every document tool together with a modern flow, reusable modules, and scalable architecture ready for growth.
             </Typography>
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.6} sx={{ mt: 3.5 }}>
               <Button variant="contained" size="large" component={RouterLink} to="/all-tools">

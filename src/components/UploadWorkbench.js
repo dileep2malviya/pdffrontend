@@ -64,7 +64,7 @@ const defaultWatermarkOptions = {
 };
 
 const defaultEditOptions = {
-  overlayText: 'Edited with PDF Orbit'
+  overlayText: 'Edited with ImageToPDFNow'
 };
 
 export default function UploadWorkbench({ title, toolSlug }) {
@@ -611,7 +611,7 @@ export default function UploadWorkbench({ title, toolSlug }) {
           : toolSlug === 'edit-pdf'
             ? {
                 ...editOptions,
-                overlayText: editOptions.overlayText.trim() || 'Edited with PDF Orbit'
+                overlayText: editOptions.overlayText.trim() || 'Edited with ImageToPDFNow'
               }
             : toolSlug === 'sign-pdf'
               ? {

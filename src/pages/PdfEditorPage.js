@@ -38,7 +38,7 @@ import { API_SERVER_URL } from '../Utils/Global';
 
 const defaultOptions = {
   findText: '',
-  overlayText: 'Edited with PDF Orbit',
+  overlayText: 'Edited with ImageToPDFNow',
   pageNumber: 1,
   positionX: 40,
   positionY: 80,
@@ -344,7 +344,7 @@ export default function PdfEditorPage() {
 
     const localEditOptions = {
       findText: String(options.findText || '').trim(),
-      overlayText: String(options.overlayText || '').trim() || 'Edited with PDF Orbit',
+      overlayText: String(options.overlayText || '').trim() || 'Edited with ImageToPDFNow',
       pageNumber: Math.max(1, toNumber(options.pageNumber, 1)),
       positionX: Math.max(16, toNumber(options.positionX, 40)),
       positionY: Math.max(16, toNumber(options.positionY, 80)),

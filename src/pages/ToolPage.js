@@ -18,6 +18,14 @@ export default function ToolPage() {
 
   const navigate = useNavigate();
 
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      // ad blocked or not loaded
+    }
+  }, [tool]);
+
   usePageSeo({
     title: tool ? tool.name : 'Tool Not Found',
     description: tool
@@ -79,7 +87,7 @@ export default function ToolPage() {
         </Grid>
 
         <Grid size={{ xs: 12, lg: 4 }}>
-          <Stack spacing={2}>
+          {/* <Stack spacing={2}>
             <Box sx={{ p: 2.4, borderRadius: 4, bgcolor: 'white', border: '1px solid rgba(16,42,42,0.08)' }}>
               <Stack direction="row" spacing={1} alignItems="center">
                 <AutoAwesomeRoundedIcon color="primary" />
@@ -109,7 +117,17 @@ export default function ToolPage() {
                 </Stack>
               </Stack>
             </Box>
-          </Stack>
+          </Stack> */}
+            <Box sx={{ width: '100%', textAlign: 'center' }}>
+              <ins
+                className="adsbygoogle"
+                style={{ display: 'block', textAlign: 'center' }}
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-5792545548472697"
+                data-ad-slot="9413515265"
+              />
+            </Box>
         </Grid>
       </Grid>
     </Container>

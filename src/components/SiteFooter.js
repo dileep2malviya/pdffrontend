@@ -15,7 +15,7 @@ export default function SiteFooter() {
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, md: 5 }}>
             <Typography variant="h6" sx={{ fontWeight: 700 }}>
-              PDF Orbit
+              ImageToPDFNow
             </Typography>
             <Typography sx={{ mt: 1.2, color: 'text.secondary', maxWidth: 420 }}>
               A modern document workspace for converting, editing, organizing, and securing PDF files with speed and clarity.
@@ -39,7 +39,7 @@ export default function SiteFooter() {
           </Grid>
         </Grid>
         <Typography sx={{ mt: 5, color: 'text.secondary' }}>
-          Copyright {new Date().getFullYear()} PDF Orbit. All rights reserved.
+          Copyright {new Date().getFullYear()} ImageToPDFNow. All rights reserved.
         </Typography>
       </Container>
     </Box>

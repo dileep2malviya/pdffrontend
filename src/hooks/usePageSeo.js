@@ -13,9 +13,9 @@ const upsertMeta = (name, content, attribute = 'name') => {
 export default function usePageSeo({ title, description, canonicalPath }) {
   useEffect(() => {
     if (title) {
-      document.title = `${title} | PDF Orbit`;
-      upsertMeta('og:title', `${title} | PDF Orbit`, 'property');
-      upsertMeta('twitter:title', `${title} | PDF Orbit`);
+      document.title = `${title} | ImageToPDFNow`;
+      upsertMeta('og:title', `${title} | ImageToPDFNow`, 'property');
+      upsertMeta('twitter:title', `${title} | ImageToPDFNow`);
     }
 
     if (description) {

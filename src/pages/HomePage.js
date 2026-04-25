@@ -72,7 +72,7 @@ export default function HomePage() {
             border: '1px solid rgba(16, 42, 42, 0.1)'
           }}
         >
-          <Typography variant="h4">Why teams choose PDF Orbit</Typography>
+          <Typography variant="h4">Why teams choose ImageToPDFNow</Typography>
           <Grid container spacing={2} sx={{ mt: 1 }}>
             {tp.map((point) => (
               <Grid size={{ xs: 12, md: 6 }} key={point}>

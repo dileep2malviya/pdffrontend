@@ -51,8 +51,8 @@ export default function NavigationBar() {
             sx={{ textDecoration: 'none', color: 'inherit', flexGrow: { xs: 1, md: 0 } }}
           >
             <DescriptionRoundedIcon sx={{ color: 'primary.main', fontSize: 30 }} />
-            <Typography variant="h6" sx={{ fontWeight: 800 }}>
-              PDF Orbit
+            <Typography variant="h6" sx={{ fontWeight: 800, color: 'primary.main' }}>
+              ImageToPDFNow
             </Typography>
           </Stack>
 

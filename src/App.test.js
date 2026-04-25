@@ -3,13 +3,13 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import UploadWorkbench from './components/UploadWorkbench';
 
-test('renders PDF Orbit brand', () => {
+test('renders ImageToPDFNow brand', () => {
   render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
   );
-  const brandElement = screen.getByText(/pdf orbit/i);
+  const brandElement = screen.getByText(/ImageToPDFNow/i);
   expect(brandElement).toBeInTheDocument();
 });
 
