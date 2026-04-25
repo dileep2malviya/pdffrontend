@@ -124,7 +124,8 @@ export default function ToolPage() {
                 data-ad-format="fluid"
                 data-ad-client="ca-pub-5792545548472697"
                 data-ad-slot="9413515265"
-              />
+              >
+              </ins>
             </Box>
         </Grid>
       </Grid>
