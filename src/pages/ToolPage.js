@@ -6,7 +6,7 @@ import usePageSeo from '../hooks/usePageSeo';
 import { fetchToolBySlug } from '../services/api';
 import { allTools } from '../data/tools'; // Fallback
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
-import { generateToolSchema, generateBreadcrumbSchema } from '../Utils/seoUtils';
+import { generateBreadcrumbSchema } from '../Utils/seoUtils';
 
 
 export default function ToolPage() {
@@ -17,9 +17,6 @@ export default function ToolPage() {
 
   const navigate = useNavigate();
 
-  // Generate tool schema when tool data is loaded
-  const toolSchema = tool ? generateToolSchema(tool) : null;
-  
   // Generate breadcrumb schema
   const breadcrumbSchema = tool ? generateBreadcrumbSchema([
     { label: 'Home', path: '/' },
