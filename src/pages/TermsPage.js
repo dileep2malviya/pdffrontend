@@ -85,7 +85,31 @@ export default function TermsPage() {
 
               <Box>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
-                  6. Contact
+                  6. Changes to Terms
+                </Typography>
+                <Typography sx={{ color: 'text.secondary' }}>
+                  We may update these Terms and Conditions at any time. Continued use of the website after changes means you accept the updated terms.
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
+                  7. Termination
+                </Typography>
+                <Typography sx={{ color: 'text.secondary' }}>
+                  We reserve the right to suspend or terminate access to our services if users violate these terms.
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
+                  8. Governing Law
+                </Typography>
+                <Typography sx={{ color: 'text.secondary' }}>
+                  These terms shall be governed and interpreted in accordance with applicable laws.
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
+                  9. Contact
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>
                   For legal notices, copyright concerns, or general questions, contact contact@imagetopdfnow.com.
