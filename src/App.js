@@ -40,7 +40,7 @@ function App() {
           path="/terms"
           element={<TermsPage />}
         />
-        <Route
+        {/* <Route
           path="/login"
           element={
             <StaticPage
@@ -49,8 +49,8 @@ function App() {
               canonicalPath="/login"
             />
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/register"
           element={
             <StaticPage
@@ -59,7 +59,7 @@ function App() {
               canonicalPath="/register"
             />
           }
-        />
+        /> */}
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Route>

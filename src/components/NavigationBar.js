@@ -69,10 +69,10 @@ export default function NavigationBar() {
           </Stack>
 
           <Stack direction="row" spacing={1} sx={{ ml: 'auto', display: { xs: 'none', md: 'flex' } }}>
-            <Button variant="text" color="inherit" component={RouterLink} to="/login">
+            {/* <Button variant="text" color="inherit" component={RouterLink} to="/login">
               Sign In
-            </Button>
-            <Button variant="contained" component={RouterLink} to="/register">
+            </Button> */}
+            <Button variant="contained" >
               Start Free
             </Button>
           </Stack>
