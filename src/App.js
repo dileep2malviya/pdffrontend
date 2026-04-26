@@ -1,10 +1,15 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
+import AboutPage from './pages/AboutPage';
 import MainLayout from './components/MainLayout';
 import AllToolsPage from './pages/AllToolsPage';
+import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import PdfEditorPage from './pages/PdfEditorPage';
+import PricingPage from './pages/PricingPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import StaticPage from './pages/StaticPage';
+import TermsPage from './pages/TermsPage';
 import ToolPage from './pages/ToolPage';
 
 function App() {
@@ -17,53 +22,23 @@ function App() {
         <Route path="/editor" element={<PdfEditorPage />} />
         <Route
           path="/pricing"
-          element={
-            <StaticPage
-              title="Pricing"
-              description="Start free and upgrade for API access, high-volume usage, and team collaboration controls."
-              canonicalPath="/pricing"
-            />
-          }
+          element={<PricingPage />}
         />
         <Route
           path="/about"
-          element={
-            <StaticPage
-              title="About ImageToPDFNow"
-              description="ImageToPDFNow is designed for high-quality document workflows with reusable architecture and a modern user experience."
-              canonicalPath="/about"
-            />
-          }
+          element={<AboutPage />}
         />
         <Route
           path="/contact"
-          element={
-            <StaticPage
-              title="Contact"
-              description="Talk with our team about enterprise usage, integrations, and custom PDF pipelines."
-              canonicalPath="/contact"
-            />
-          }
+          element={<ContactPage />}
         />
         <Route
           path="/privacy-policy"
-          element={
-            <StaticPage
-              title="Privacy Policy"
-              description="We explain what data we collect, how we use cookies and analytics, and how ad services like Google AdSense may process information when you use ImageToPDFNow."
-              canonicalPath="/privacy-policy"
-            />
-          }
+          element={<PrivacyPolicyPage />}
         />
         <Route
           path="/terms"
-          element={
-            <StaticPage
-              title="Terms and Conditions"
-              description="By using ImageToPDFNow, you agree to use our tools only with content you own or are authorized to process. We do not allow copyright infringement or unlawful use."
-              canonicalPath="/terms"
-            />
-          }
+          element={<TermsPage />}
         />
         <Route
           path="/login"

@@ -27,6 +27,9 @@ export default function SiteFooter() {
             <Typography sx={{ mt: 1.2, color: 'text.secondary', maxWidth: 420 }}>
               A modern document workspace for converting, editing, organizing, and securing PDF files with speed and clarity.
             </Typography>
+            <Typography sx={{ mt: 1.2, color: 'text.secondary' }}>
+              Support: <Link href="mailto:contact@imagetopdfnow.com">contact@imagetopdfnow.com</Link>
+            </Typography>
           </Grid>
           <Grid size={{ xs: 12, md: 3 }}>
             <Typography sx={{ fontWeight: 700, mb: 1.5 }}>Quick Tools</Typography>
