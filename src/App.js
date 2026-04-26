@@ -8,7 +8,6 @@ import NotFoundPage from './pages/NotFoundPage';
 import PdfEditorPage from './pages/PdfEditorPage';
 import PricingPage from './pages/PricingPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
-import StaticPage from './pages/StaticPage';
 import TermsPage from './pages/TermsPage';
 import ToolPage from './pages/ToolPage';
 

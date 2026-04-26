@@ -1,6 +1,5 @@
 import { Box, Button, Chip, Container, Grid, Stack, Typography } from '@mui/material';
 import RocketLaunchRoundedIcon from '@mui/icons-material/RocketLaunchRounded';
-import CloudDoneRoundedIcon from '@mui/icons-material/CloudDoneRounded';
 import SecurityRoundedIcon from '@mui/icons-material/SecurityRounded';
 import { Link as RouterLink } from 'react-router-dom';
 
