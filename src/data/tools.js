@@ -114,10 +114,10 @@ export const allTools = toolGroups.flatMap((group) =>
 );
 
 export const stats = [
-  { label: 'Tool Modules', value: '18+' },
-  { label: 'Files Processed / Day', value: '250K' },
-  { label: 'Avg Processing Time', value: '< 10s' },
-  { label: 'Uptime Goal', value: '99.9%' }
+  { label: 'Tool Coverage', value: 'Conversion + Editing' },
+  { label: 'Workflow', value: 'Upload to Download' },
+  { label: 'Access', value: 'Browser Based' },
+  { label: 'Account Requirement', value: 'No Signup for Basic Use' }
 ];
 
 export const trustPoints = [

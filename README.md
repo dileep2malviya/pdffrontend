@@ -65,6 +65,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+## AdSense Policy Configuration
+
+For production deployments using AdSense, review the following configuration:
+
+1. Use a Google-certified CMP for EEA, UK, and Switzerland traffic.
+2. Enable CMP-based ad enforcement in the frontend environment.
+
+### Environment Setup
+
+Copy `.env.example` to your production environment file and set:
+
+`REACT_APP_REQUIRE_GOOGLE_CMP=true`
+
+When this flag is enabled, ads are shown only when user consent is accepted and a CMP signal is detected by the app.
+
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

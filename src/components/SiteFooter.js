@@ -54,7 +54,7 @@ export default function SiteFooter() {
           </Grid>
         </Grid>
         <Typography sx={{ mt: 5, color: 'text.secondary' }}>
-          Copyright {new Date().getFullYear()} ImageToPDFNow.com All rights reserved.
+          Copyright {new Date().getFullYear()} imagetopdfnow.com All rights reserved.
         </Typography>
       </Container>
     </Box>

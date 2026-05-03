@@ -1,5 +1,6 @@
 import { Box } from '@mui/material';
 import { Outlet } from 'react-router-dom';
+import CookieConsentBanner from './CookieConsentBanner';
 import NavigationBar from './NavigationBar';
 import SiteFooter from './SiteFooter';
 
@@ -9,6 +10,7 @@ export default function MainLayout() {
       <NavigationBar />
       <Outlet />
       <SiteFooter />
+      <CookieConsentBanner />
     </Box>
   );
 }

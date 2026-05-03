@@ -14,11 +14,6 @@ export const generateToolSchema = (tool, baseUrl = 'https://www.imagetopdfnow.co
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD'
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.7',
-      ratingCount: '800'
     }
   };
 };
