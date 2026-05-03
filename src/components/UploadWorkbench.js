@@ -69,7 +69,7 @@ const defaultEditOptions = {
 
 export default function UploadWorkbench({ title, toolSlug }) {
   const acceptedFileTypes = toolSlug === 'jpg-to-pdf'
-    ? '.jpg,.jpeg,.png,image/jpeg,image/png'
+    ? '.jpg,.jpeg,.jfif,.png,image/jpeg,image/png'
     : toolSlug === 'word-to-pdf'
       ? '.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document'
       : toolSlug === 'ppt-to-pdf'
@@ -396,9 +396,27 @@ export default function UploadWorkbench({ title, toolSlug }) {
     }
 
     if (toolSlug === 'jpg-to-pdf') {
-      const hasInvalidFile = selectedFiles.some((file) => !file.type.startsWith('image/'));
+      const hasInvalidFile = selectedFiles.some((file) => {
+        const lowerName = file.name.toLowerCase();
+        const hasSupportedExtension =
+          lowerName.endsWith('.jpg') ||
+          lowerName.endsWith('.jpeg') ||
+          lowerName.endsWith('.jfif') ||
+          lowerName.endsWith('.png');
+        const hasSupportedMime =
+          file.type === 'image/jpeg' ||
+          file.type === 'image/jpg' ||
+          file.type === 'image/pjpeg' ||
+          file.type === 'image/png' ||
+          file.type === 'image/jfif';
+
+        // Some browsers provide empty or generic MIME for local files,
+        // so extension check is used as a reliable fallback.
+        return !(hasSupportedExtension || hasSupportedMime);
+      });
+
       if (hasInvalidFile) {
-        setError('For JPG to PDF, please upload only JPG, JPEG, or PNG image files.');
+        setError('For JPG to PDF, please upload only JPG, JPEG, JFIF, or PNG image files.');
         return;
       }
     }

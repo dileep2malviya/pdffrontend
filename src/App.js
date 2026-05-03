@@ -1,5 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
+import BlogArticlePage from './pages/BlogArticlePage';
+import BlogIndexPage from './pages/BlogIndexPage';
 import MainLayout from './components/MainLayout';
 import AllToolsPage from './pages/AllToolsPage';
 import ContactPage from './pages/ContactPage';
@@ -16,6 +18,8 @@ function App() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/blog" element={<BlogIndexPage />} />
+        <Route path="/blog/:articleSlug" element={<BlogArticlePage />} />
         <Route path="/all-tools" element={<AllToolsPage />} />
         <Route path="/tools/:toolSlug" element={<ToolPage />} />
         <Route path="/editor" element={<PdfEditorPage />} />

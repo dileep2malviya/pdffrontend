@@ -15,6 +15,7 @@ import {
 import { useState } from 'react';
 
 const navItems = [
+  { label: 'Blog', to: '/blog' },
   { label: 'All Tools', to: '/all-tools' },
   { label: 'Pricing', to: '/pricing' },
   { label: 'About', to: '/about' },
@@ -72,7 +73,7 @@ export default function NavigationBar() {
             {/* <Button variant="text" color="inherit" component={RouterLink} to="/login">
               Sign In
             </Button> */}
-            <Button variant="contained" >
+            <Button variant="contained" component={RouterLink} to="/">
               Start Free
             </Button>
           </Stack>
@@ -94,7 +95,7 @@ export default function NavigationBar() {
                     {item.label}
                   </NavLink>
                 ))}
-                <Button variant="contained" component={RouterLink} to="/register" onClick={() => setOpen(false)}>
+                <Button variant="contained" component={RouterLink} to="/" onClick={() => setOpen(false)}>
                   Start Free
                 </Button>
               </Stack>

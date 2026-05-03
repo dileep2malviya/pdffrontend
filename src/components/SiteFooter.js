@@ -9,6 +9,7 @@ const quickLinks = [
 ];
 
 const companyLinks = [
+  { label: 'Blog', to: '/blog' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
   { label: 'Privacy Policy', to: '/privacy-policy' },
@@ -53,7 +54,7 @@ export default function SiteFooter() {
           </Grid>
         </Grid>
         <Typography sx={{ mt: 5, color: 'text.secondary' }}>
-          Copyright {new Date().getFullYear()} ImageToPDFNow. All rights reserved.
+          Copyright {new Date().getFullYear()} ImageToPDFNow.com All rights reserved.
         </Typography>
       </Container>
     </Box>
