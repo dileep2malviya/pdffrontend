@@ -143,15 +143,99 @@ export default function PrivacyPolicyPage() {
               </Box>
               <Box>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
-                  8. Your Choices
+                  8. Your Choices &amp; Opt-Out
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>
                   You can accept or reject ad cookies using the controls above, change browser cookie settings, and contact us if you need help with privacy or data handling questions.
                 </Typography>
               </Box>
+              <Box
+                id="european-regulations"
+                sx={{
+                  border: '1px solid rgba(15,118,110,0.25)',
+                  borderRadius: 3,
+                  p: { xs: 2, md: 2.8 },
+                  background: 'rgba(15,118,110,0.04)'
+                }}
+              >
+                <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
+                  9. European Regulations &amp; Your Rights (EEA / UK / Switzerland)
+                </Typography>
+                <Typography sx={{ color: 'text.secondary', mb: 1.2 }}>
+                  This section applies to users in the European Economic Area (EEA), United Kingdom (UK), and Switzerland. It fulfils the
+                  "Learn more" disclosure requirement for Google AdSense European regulations messages.
+                </Typography>
+
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 0.5 }}>
+                  Legal Bases for Processing
+                </Typography>
+                <Typography sx={{ color: 'text.secondary', mb: 1.2 }}>
+                  We process your data on the following legal bases under the GDPR and UK GDPR:
+                </Typography>
+                <Box component="ul" sx={{ color: 'text.secondary', pl: 3, mb: 1.2, '& li': { mb: 0.6 } }}>
+                  <li><strong>Consent</strong> — personalised advertising cookies and similar tracking are only activated after you expressly accept them via our consent banner or the controls on this page.</li>
+                  <li><strong>Legitimate interests</strong> — basic site analytics and security logging that do not involve advertising.</li>
+                  <li><strong>Contract performance</strong> — file processing necessary to deliver the conversion or editing result you requested.</li>
+                </Box>
+
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 0.5 }}>
+                  Consent for Personalised Advertising
+                </Typography>
+                <Typography sx={{ color: 'text.secondary', mb: 1.2 }}>
+                  We use Google AdSense to display advertisements. For EEA, UK, and Swiss users, personalised ads and the associated cookies are loaded
+                  only after you give explicit consent. If you reject or have not yet responded, ad personalisation is withheld. You can change your
+                  choice at any time using the controls at the top of this page or via the cookie banner that appears on your first visit.
+                </Typography>
+
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 0.5 }}>
+                  Your Rights Under GDPR / UK GDPR
+                </Typography>
+                <Box component="ul" sx={{ color: 'text.secondary', pl: 3, mb: 1.2, '& li': { mb: 0.6 } }}>
+                  <li><strong>Right of access</strong> — request a copy of personal data we hold about you.</li>
+                  <li><strong>Right to rectification</strong> — ask us to correct inaccurate or incomplete data.</li>
+                  <li><strong>Right to erasure ("right to be forgotten")</strong> — request deletion of your personal data where no overriding legitimate interest exists.</li>
+                  <li><strong>Right to restriction</strong> — ask us to restrict processing in certain circumstances.</li>
+                  <li><strong>Right to data portability</strong> — receive data you provided in a structured, machine-readable format.</li>
+                  <li><strong>Right to object</strong> — object to processing based on legitimate interests or for direct marketing.</li>
+                  <li><strong>Right to withdraw consent</strong> — withdraw ad consent at any time without affecting the lawfulness of prior processing.</li>
+                </Box>
+
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 0.5 }}>
+                  Third-Party Data Controllers
+                </Typography>
+                <Typography sx={{ color: 'text.secondary', mb: 1.2 }}>
+                  When personalised ads are active, Google Ireland Limited (Gordon House, Barrow St, Dublin 4, Ireland) acts as an independent data
+                  controller for its advertising and measurement activities. For details of how Google uses data on partner sites, visit{' '}
+                  <Link href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noreferrer">
+                    policies.google.com/technologies/partner-sites
+                  </Link>
+                  . You can also manage Google's ad personalisation settings at{' '}
+                  <Link href="https://adssettings.google.com" target="_blank" rel="noreferrer">
+                    adssettings.google.com
+                  </Link>
+                  .
+                </Typography>
+
+                <Typography variant="subtitle2" sx={{ fontWeight: 700, mb: 0.5 }}>
+                  Supervisory Authority
+                </Typography>
+                <Typography sx={{ color: 'text.secondary' }}>
+                  If you believe we have not handled your data in accordance with applicable law, you have the right to lodge a complaint with your
+                  local data protection authority. A list of EEA supervisory authorities is available at{' '}
+                  <Link href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noreferrer">
+                    edpb.europa.eu
+                  </Link>
+                  . UK residents may contact the{' '}
+                  <Link href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noreferrer">
+                    ICO
+                  </Link>
+                  .
+                </Typography>
+              </Box>
+
               <Box>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 0.8 }}>
-                  9. Contact Us
+                  10. Contact Us
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>
                   If you have any questions, abuse reports, or privacy requests, contact us at: contact@imagetopdfnow.com.
